@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(239, 243, 247);
+    }
+    .main{
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+        background-color: #fff;
+        padding: auto;
+        align-content: center;
+        place-items: center;
+        padding: 50px;
+        border-radius: 10px;
+    }
+    .main img{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px 30px;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .certificate{
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .certificate img{
+        width: 400px;
+        height: 250px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    }
+    .dark{
+        background-color: rgb(48, 44, 44);
+        height: 400px;
+        margin: 30px 30px;
+    }
+    .dark img{
+        height: 300px;
+        padding: 30px 50px;
+        width: 300px;
+    }
+    .reviews{
+        display: flex;
+        flex-direction: row;
+        height: 350px;
+        background-image: linear-gradient(rgb(221, 19, 194),rgb(212, 121, 189),pink);
+       overflow: hidden;
+       justify-content: center;
+       gap: 40px;
+       margin-top: 30px;
+    }
+    .review{
+        height: 300px;
+        background-color: #fff;
+        width: 300px;
+        margin: 80px auto;
+        text-align: center;
+    }
+    .review .head{
+        background-color: purple;
+        background-image: linear-gradient(purple,rgb(187, 65, 187),rgb(197, 164, 197));
+        height: 50px;
+        margin-top: -50px;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #0e0d0d;
+    }
+    .top{
+        background-color:  rgb(212, 121, 189);
+        padding: 10px 500px 10px 0px;
+        color: #fff;
+        background-image: linear-gradient(rgb(221, 19, 194),rgb(212, 121, 189),pink);
+       justify-content: start;
+    }
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-top: 20px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(143, 10, 98);
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, #f3f0f2 60%, rgb(245, 242, 244) 88%,
+       rgb(209, 110, 184) 40%, rgba(184, 8, 154, 0.603) 48%);
+    color: rgb(10, 10, 10);
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, #f3f0f2 60%, rgb(245, 242, 244) 88%,
+       rgb(209, 110, 184) 40%, rgba(184, 8, 154, 0.603) 48%);
+    color: rgb(15, 15, 15);
+    transform: rotateY(180deg);
+  }
+</style>
+<body>
+    <div class="top">
+        <h1>Our Achievments</h1>
+    </div>
+    <div class="container">
+        <div class="main">
+            <img src="https://www.consultancygrowthnetwork.com/wp-content/uploads/Winners-award-logo.png" alt="image-1">
+        </div>
+        <div class="main">
+            <img src="https://amazeworld.com.au/wp-content/uploads/2020/05/SCBA_2023_Winner_Badge_Experiences-Large-300x300.png" alt="image-1">
+        </div>
+        <div class="main">
+            <img src="https://th.bing.com/th/id/OIP.LrqHrgvPB5_BobQANxAq8AHaHa?rs=1&pid=ImgDetMain" alt="image-1">
+        </div>
+        <div class="main">
+            <img src="https://52142c7bbfcb51a12aae-f3c60d04854afa722b3ea29918ed1182.ssl.cf3.rackcdn.com/195.png" alt="image-1">
+        </div>
+    </div>
+    <div class="certificate">
+        <img src="https://thumbs.dreamstime.com/b/certificate-appreciation-template-brown-wavy-curved-striped-background-gold-label-vector-illustration-81073289.jpg" alt="certificate">
+        <img src="https://img.freepik.com/premium-vector/premium-golden-certificate-template-design_118401-41.jpg?w=1480" alt="certificate">
+        <img src="https://th.bing.com/th/id/OIP.NQogVyPbBbsBAePnt2scHgHaFO?w=1060&h=749&rs=1&pid=ImgDetMain" alt="certificate">
+    </div>
+    <div class="dark">
+        <img src="https://png.pngtree.com/png-clipart/20220909/original/pngtree-gold-medal-set-vector-the-best-award-png-image_8515600.png" alt="achieve">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/923/361/original/gold-trophy-award-png.png" class="award" alt="">
+        <img src="https://th.bing.com/th/id/R.4f2d3f818b9ea349c5eb533d8a39c17c?rik=lRfs5jiK2W9e4g&riu=http%3a%2f%2fpngimg.com%2fuploads%2facademy_awards%2facademy_awards_PNG34.png&ehk=4Y0KmnxW4wn7dqpK83v9KhhXkYtzslpXgy5wqbG04%2fI%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </div>
+    <div class="reviews">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Our Speciality</p>
+                    <p>Click Me</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>Lorem ipsum dolor, sit <br> 
+                        amet consectetur adip <br>
+                        isicing elit. Exercit <br>
+                        ationem molestias cum <br>
+                        repellendus veritatis <br>
+                        enim voluptates tempori <br>
+                        bus culpa, cumque rerum, <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Our Speciality</p>
+                    <p>Click Me</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>Lorem ipsum dolor, sit <br> 
+                        amet consectetur adip <br>
+                        isicing elit. Exercit <br>
+                        ationem molestias cum <br>
+                        repellendus veritatis <br>
+                        enim voluptates tempori <br>
+                        bus culpa, cumque rerum, <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Our Speciality</p>
+                    <p>Click Me</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>Lorem ipsum dolor, sit <br> 
+                        amet consectetur adip <br>
+                        isicing elit. Exercit <br>
+                        ationem molestias cum <br>
+                        repellendus veritatis <br>
+                        enim voluptates tempori <br>
+                        bus culpa, cumque rerum, <br>
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

@@ -5,22 +5,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.uiverse.io/path/to/uiverse.css">  
+    <script src="https://cdn.uiverse.io/path/to/uiverse.js"></script>
 </head>
 <style>
     body{
-        background-color: #fff;
+        background-color: #302e2e;
     }
     .contact-page{
-        width: 80%;
-        height: 600px;
+        width: 70%;
+        height: 500px;
         margin: 0px auto 0px auto;
-        background-image: linear-gradient(rgb(244, 239, 240),rgb(222, 222, 222));
-        border-radius: 100px;
     }
     .content-image{
         float: left;
         margin-top: 70px;
-        margin-left: 100px;
+        margin-left: 30px;
     }
     .contact-form{
         display:flex;
@@ -35,9 +35,9 @@
         background-color: #fff;
         text-align: center;
         float: right;
-        margin-top: 120px;
-        margin-right: 230px;
-        color: red;
+        margin-top: 100px;
+        margin-right: 120px;
+        color: #4d0404;
     }
     .contact-form input{
         padding: 10px;
@@ -50,7 +50,7 @@
         border: none;
         width: 130px;
         color: white;
-        background-color: red;
+        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
         border-radius: 10px;
         margin: auto;
         cursor: pointer;
@@ -62,72 +62,289 @@
         background-color: rgb(173, 85, 85);
         color: black;
     }
-    .contact-footer{
-        width: 100%;
-        height: 300px;
-        background-color: red;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
-        display: flex;
-        flex-direction: row;
-    }
     .email{
-        background-color: #131212;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-left: 300px;
+        width: 80px;
+        height: 80px;
+        margin-left: 400px;
         justify-content: center;
         align-items: center;
         place-content: center;
-        margin-top: -50px;
-    }
-    .email i{
-        margin-left: 30px;
-        color: #fff;
+        z-index: 1;
         position: relative;
     }
-    .email:hover{
-        background: rgb(223, 13, 13);
+    .email i{
+        margin-left: 20px;
+        color: #050505;
+        position: relative;
     }
-    .box{
-        display: none;
-        width: 250px;
-        height: 150px;
-        background-image: linear-gradient(rgb(207, 144, 155),rgb(243, 239, 240));
-        cursor: pointer;
-        color: #0a0a0a;
-    }
-    .box i{
-        color: #131212;
-        margin-right: 10px;
-    }
+
+    
     .email:hover .box{
         display: block;
         position: absolute;
     }
     .header{
         width: 100%;
-        height: 300px;
-        background-color: red;
-        border-bottom-left-radius: 200px;
-        border-bottom-right-radius: 200px;
+        height: 200px;
+        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
         display: flex;
         flex-direction: column;
         text-align: center;
+        place-content: center;
     }
     .header h1{
-        margin: 50px auto 0px auto;
-        font-size: 50px;
+        margin: 10px auto 0px auto;
+        font-size: 30px;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .header p{
-        font-size: 35px;
+        font-size: 20px;
     }
+    .card{
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        margin-top: 0px;
+        margin-left: -100px;
+        position: absolute;
+        z-index: 0;
+    }
+    .envelope{
+        width: 60px;
+        height: 50px;
+        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
+        color: #fffefe;
+        margin: 20px auto 0px auto ;
+        border-radius: 50%;
+        padding: 20px 25px 30px 20px;
+    }
+    .content{
+        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
+        padding: 1px;
+        border-radius: 1.2rem;
+        box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+        max-width: 300px;
+        margin-top: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: relative;
+        color: #fff;
+        transition: 0.5s;
+        width: 400px;
+        height: 300px;
+        cursor: pointer;
+    }
+    .content:hover {
+        transform: translateY(-20px);
+    }
+    .content::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, #ffbc00, #ff0058);
+        border-radius: 1.2em;
+      }
+      .content::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ffbc00, #ff0058);
+        filter: blur(30px);
+      }
+      .content span {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+        border-radius: 1em;
+      }
+      
+      .content span::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(224, 194, 194, 0.1);
+      }
+      .content .main h4{
+        color: #ffffff;
+      }
+      .content .main {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+      }
+    .main{
+        font-size: 1rem;
+        color: #eef0f3;
+        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
+        box-shadow: #3a4b8a;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main i{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .main-row{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        justify-content: center;
+    }
+    .main-col{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    place-content: center;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+ 
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+    text-align: center ;
+  }  
+  .card__description h4{
+    text-align: center;
+  }
+  .anime{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+.card-con {
+    --border-radius: 0.75rem;
+    --primary-color: #b91422;
+    --secondary-color: #f5f4f7;
+    width: 210px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #0f0f0f;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+    margin: auto;
+}
+  
+  .card-con > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .card-con .card__content-con {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .card-con .card__title-con {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .card-con .card__date-con {
+    color: #f1f0f5;
+    font-size: 0.8rem;
+  }
+  
+  .card-con .card__arrow-con {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-con svg {
+    transition: 0.2s;
+  }
+  
+  /* hover */
+  .card-con:hover .card__title-con {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .card-con:hover .card__arrow-con {
+    background: #111;
+  }
+  
+  .card-con:hover .card__arrow-con svg {
+    transform: translateX(3px);
+  }
+  .conclusion{
+    height: 250px;
+    background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 80px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;
+  }
 </style>
-<body>
+<div>
     <div class="header">
         <h1>Contact Us</h1>
-        <p>Any Questions or remarks? just write us a message</p>
+        
     </div>
     <div class="contact-page">
         <div class="content-image">
@@ -137,33 +354,94 @@
             <h3>Submit Your Enquiries Here.</h3>
             <input type="text" placeholder="Enter Your Name">
             <input type="email" placeholder="Enter Your Email">
-            <input type="text" placeholder="Enter Your Mobile Number">
+            <input type="text" style="height: 100px;" placeholder="Enter Your Message Hereee...">
             <button>Send <i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </div>
-    <div class="contact-footer">
-        <div class="email">
-            <i class="fa-solid fa-envelope fa-4x"></i>
-            <div class="box">
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>lokeshloki.com</h3>
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>keerthi@gmail.com</h3>
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>lokee@gmail.com</h3>
+    <div class="main-row">
+        <div class="main-col">
+            <div class="envelope">
+                <i class="fa-solid fa-envelope fa-4x"></i>
+            </div>
+            <div class="content">
+                <span></span>
+                <div class="main">
+                    <h4>Contact Through Mail</h4>
+                    <h5><i class="fa-solid fa-envelope fa-2x"></i>lokesh@gmail.com</h5>
+                    <h5><i class="fa-solid fa-envelope fa-2x"></i>keerthi@gmail.com</h5>
+                    <h5><i class="fa-solid fa-envelope fa-2x"></i>sri@gmail.com</h5>
+                </div>
             </div>
         </div>
-        <div class="email">
-            <i class="fa-solid fa-phone fa-4x"></i>
-            <div class="box">
-                <h3><i class="fa-solid fa-phone fa-1x"></i>+91 9176631455</h3>
-                <h3><i class="fa-solid fa-phone fa-1x"></i>+91 9898989000</h3>
-                <h3><i class="fa-solid fa-phone fa-1x"></i>+91 9791001009</h3>
+        <div class="main-col">
+            <div class="envelope">
+                <i class="fa-solid fa-phone fa-4x"></i></div>
+                <div class="content">
+                    <span></span>
+                    <div class="main">
+                        <h4>Contact Through Mail</h4>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>lokesh@gmail.com</h5>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>keerthi@gmail.com</h5>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>sri@gmail.com</h5>
+                    </div>
+                </div>
+        </div>
+        <div class="main-col">
+            <div class="envelope">
+                <i class="fa-brands fa-whatsapp fa-4x"></i></div>
+                <div class="content">
+                    <span></span>
+                    <div class="main">
+                        <h4>Contact Through Mail</h4>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>lokesh@gmail.com</h5>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>keerthi@gmail.com</h5>
+                        <h5><i class="fa-solid fa-envelope fa-2x"></i>sri@gmail.com</h5>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="three">
+
+    </div>
+    <div class="conclusion">
+        <div class="card-con">
+            <h3 class="card__title-con">Title
+            </h3>
+            <p class="card__content-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="card__date-con">
+                April 15, 2022
+            </div>
+            <div class="card__arrow-con">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                    <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                </svg>
             </div>
         </div>
-        <div class="email">
-            <i class="fa-solid fa-envelope fa-5x"></i>
-            <div class="box">
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>lokeshloki.com</h3>
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>keerthi@gmail.com</h3>
-                <h3><i class="fa-solid fa-envelope fa-1x"></i>lokee@gmail.com</h3>
+        <div class="card-con">
+            <h3 class="card__title-con">Title
+            </h3>
+            <p class="card__content-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="card__date-con">
+                April 15, 2022
+            </div>
+            <div class="card__arrow-con">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                    <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="card-con">
+            <h3 class="card__title-con">Title
+            </h3>
+            <p class="card__content-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="card__date-con">
+                April 15, 2022
+            </div>
+            <div class="card__arrow-con">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                    <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                </svg>
             </div>
         </div>
     </div>
