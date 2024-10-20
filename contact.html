@@ -10,7 +10,11 @@
 </head>
 <style>
     body{
-        background-color: #302e2e;
+        --color: rgba(114, 114, 114, 0.3);
+        background-color: #191a1a;
+        background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+            linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+        background-size: 55px 55px;
     }
     .contact-page{
         width: 70%;
@@ -22,46 +26,8 @@
         margin-top: 70px;
         margin-left: 30px;
     }
-    .contact-form{
-        display:flex;
-        flex-direction: column;
-        gap: 20px;
-        box-sizing: border-box;
-        border: 2px solid none;
-        padding: 20px;
-        box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-        width: 400px;
-        border-radius: 10px;
-        background-color: #fff;
-        text-align: center;
-        float: right;
-        margin-top: 100px;
-        margin-right: 120px;
-        color: #4d0404;
-    }
-    .contact-form input{
-        padding: 10px;
-        border-radius: 10px;
-        width: 250px;
-        margin: auto;
-    }
-    .contact-form button{
-        padding: 10px;
-        border: none;
-        width: 130px;
-        color: white;
-        background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
-        border-radius: 10px;
-        margin: auto;
-        cursor: pointer;
-    }
-    .contact-form i{
-        margin-left: 5px;
-    }
-    .contact-form button:hover{
-        background-color: rgb(173, 85, 85);
-        color: black;
-    }
+
+
     .email{
         width: 80px;
         height: 80px;
@@ -340,6 +306,111 @@
     display: flex;
     flex-direction: row;
   }
+.form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#520606, #d3585e) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 100px auto;
+  }
+
+  .form-container:hover{
+    box-shadow: 0px 0px 30px 1px rgba(207, 59, 83, 0.3);
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #830919;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #830919;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+    
 </style>
 <div>
     <div class="header">
@@ -350,14 +421,20 @@
         <div class="content-image">
             <img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-contact-clipart-cute-girl-girl-talking-on-phone-vector-png-image_6810885.png" alt="contact-image">
         </div>
-        <div class="contact-form">
-            <h3>Submit Your Enquiries Here.</h3>
-            <input type="text" placeholder="Enter Your Name">
-            <input type="email" placeholder="Enter Your Email">
-            <input type="text" style="height: 100px;" placeholder="Enter Your Message Hereee...">
-            <button>Send <i class="fa-solid fa-paper-plane"></i></button>
-        </div>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="email">Company Email</label>
+                <input type="text" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+            </div>
+            <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
     </div>
+        </div>
     <div class="main-row">
         <div class="main-col">
             <div class="envelope">

@@ -96,7 +96,7 @@ color: black;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     text-align: center;
     place-content: center;
-    background-color: rgb(139, 73, 73);
+    background-color: rgb(109, 100, 100);
     cursor: pointer;
     border: 2px solid #080808;
 }
@@ -208,9 +208,9 @@ h1{
 }
 .service:hover{
     width: 430px;
-    background-color: rgb(66, 136, 125);
+    background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
     color: #fff;
-    border: 2px solid rgb(122, 204, 210);
+    border: 2px solid rgb(75, 7, 7);
 }
 .service i{
     margin: 20px 0px;
@@ -259,6 +259,7 @@ h1{
     font-size: 30px;
     color: white;
     gap: 50px;
+    
 }
 .carousel-inner{
     width: 95%;
@@ -300,14 +301,14 @@ button:hover {
     float: left;
 }
 .contact-form{
-    width: 500px;
-    height: 600px;
+    padding-block: 20px;
+    padding-inline: 40px;
     float: right;
     border: 2px solid rgb(12, 12, 12);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     margin-top: 90px;
     border-radius: 10px;
-    background-image: linear-gradient(rgb(7, 78, 77),rgb(122, 204, 210));
+    background-color: #171717;
 }
 .input-fields{
     display: flex;
@@ -321,34 +322,46 @@ button:hover {
     width: 300px;
     margin: auto;
     border-radius: 10px;
-}
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #272727;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  .contact-form:hover{
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  }
 
 .contact-form  h3{
-    color: #fff;
+    color: rgb(0, 255, 200);
     text-align: center;
-    font-size: 48px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3em;
+    font-family: sans-serif;
     margin-top: 30px;
 }
 .input-fields .submit-btn{
     width: 150px;
     height: 50px;
-    background-color: rgb(7, 68, 118);
-    color: #faf8f8;
     margin: 20px auto;
     border-radius: 5px;
     text-align: center;
     padding-top: 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    color: rgb(0, 0, 0);
 }
 .input-fields .submit-btn:hover{
-    background-color: #fff;
-    color: #080808;
+    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+    color: rgb(0, 255, 200);
 }
+
 footer{
     margin-top: 70px;
     width: 100%;
-    background-color: rgb(66, 136, 125);
+    background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
 }
 .footer-content{
     display: flex;
@@ -358,30 +371,34 @@ footer{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    color: #fff;
 }
 .footer-text h4{
     font-family: sans-serif;
-    margin: 30px 0px 0px 80px
+    margin: 30px 0px 0px 80px;
+    color: #fff;
 }
 .footer-text h6{
     margin: 10px 0px 0px 80px;
+    color: #fff;
 }
 .social-icons{
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin: 20px 0px 20px 80px;
+    color: #fff;
 }
 .footer-text h4:hover,h6:hover,i:hover{
-    color: #fff;
+    color: #f5e9e9;
 }
 .field-1{
     box-sizing: border-box;
     margin: 30px auto;
-    border: 3px solid rgb(249, 247, 247);
+    border: 3px solid rgb(12, 12, 12);
     padding: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    background-color: rgb(66, 136, 125);
+    background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
     color: #fff;
 }
 .field{
@@ -391,9 +408,6 @@ footer{
 }
 .field-1:hover{
     transform: scale(1.1);
-    background-color: rgb(46, 196, 146);
-    color: #080808;
-    border-color: #080808;
 }
 .fa-feather-pointed{
     width: 50px;
@@ -408,6 +422,7 @@ header h3{
 header h3:hover{
     color: #fff;
 }
+
 @media screen and (max-width:900px) {
     header{
         width: auto;
@@ -416,7 +431,7 @@ header h3:hover{
     header{
     width: auto;
     height: 80px;
-    background-color: rgb(66, 136, 125);
+    background: linear-gradient(135deg, #4d0404 0%, #aa0d0d 43%, #0d1120 100%);
     display: flex;
     flex-direction:row ;
     position: fixed;
